@@ -2,7 +2,7 @@ class Raffler.Routers.Entries extends Backbone.Router
   routes:
     '': 'index'                
   index: ->
-    alert "backbone page from router"
+    alert "This is a test"
   initialize: -> 
-    new Raffler.Routers.Entries
-    Backbone.history.start()
+    #new Raffler.Routers.Entries
+    #Backbone.history.start()
