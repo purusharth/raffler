@@ -7,8 +7,15 @@
 
 <ul>
 	<% for entry in @entries.models: %>
-	<li> <%= entry.get('name') %></li>
+	<li> 
+		<%= entry.get('name') %>
+		<% if entry.get('winner'): %>
+      		<span class="winner">WINNER</span>
+  		<% end %>
+	</li>
 	<% end %>
 </ul>
+
+<button id="draw">Draw Winner</button>
 
 
